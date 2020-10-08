@@ -4,6 +4,7 @@ import "./App.css";
 import Info from './Components/info.js'
 import Picture from './Components/picture.js'
 
+
 function App() {
 
   const[info, setInfo] = useState([])
@@ -20,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>${info.title}</h1>
+      <h1>{info.title}</h1>
       <Picture source={info.url}/>
       <Info copyright={info.copyright} date={info.date} text={info.explanation}/>
     </div>
